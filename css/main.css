@@ -1577,7 +1577,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffe3ff;
+  background: #711cff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1585,6 +1585,9 @@ pre .javascript .function {
   margin-right: 3px;
   vertical-align: middle;
   width: 4px;
+}
+.links-of-author-item {
+  text-align: center;
 }
 .feed-link,
 .chat {
