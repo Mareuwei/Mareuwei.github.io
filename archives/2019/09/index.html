@@ -841,6 +841,30 @@
 
 
 
+    
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'cn1hsEjEDAhKDB8YVjs3cJRx-gzGzoHsz',
+    appKey: 'pQyInTyx3Qgj81CC4kiI9F76',
+    placeholder: '来了，老弟！',
+    avatar: 'retro',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
+</script>
+
 
 <script type="text/javascript" src="/js/src/dytitle.js"></script>
 

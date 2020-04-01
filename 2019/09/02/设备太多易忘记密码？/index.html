@@ -370,6 +370,24 @@
                 <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
               </span>
             </span>
+          
+            
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="fa fa-comment-o"></i>
+    </span>
+    
+      <span class="post-meta-item-text">评论数：</span>
+    
+  
+    <a href="/2019/09/02/设备太多易忘记密码？/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/09/02/设备太多易忘记密码？/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
           <br>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -489,6 +507,9 @@
 
           </div>
           
+    
+    <div class="comments" id="comments"></div>
+  
 
 
         </div>
@@ -797,6 +818,30 @@
 
 
 
+
+    
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'cn1hsEjEDAhKDB8YVjs3cJRx-gzGzoHsz',
+    appKey: 'pQyInTyx3Qgj81CC4kiI9F76',
+    placeholder: '来了，老弟！',
+    avatar: 'retro',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
+</script>
 
 
 <script type="text/javascript" src="/js/src/dytitle.js"></script>
